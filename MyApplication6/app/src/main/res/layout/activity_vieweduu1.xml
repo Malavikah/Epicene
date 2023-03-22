@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagess"
+
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".vieweduu1">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView69"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:text="Institute Name" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView71"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:text="place" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView72"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:text="Post" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView73"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:text="pin" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView74"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:text="Phone No" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView75"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+</LinearLayout>

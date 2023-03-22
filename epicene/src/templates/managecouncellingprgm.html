@@ -1,0 +1,42 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+{% extends 'medicalofficerindex.html' %}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="addcouncillingprgm#about">
+  <table width="200" border="0" class="table">
+    <tr>
+      <td>Counselling program</td>
+      <td>Place</td>
+      <td>Time</td>
+      <td>Phn No </td>
+      <td>&nbsp;</td>
+
+    </tr>
+    {% for i in val %}
+    <tr>
+      <td>{{i[1+1]}}</td>
+      <td>{{i[3+1]}}</td>
+      <td>{{i[5+1]}}</td>
+      <td>{{i[6+1]}}</td>
+      <td><a href="deletemanagecouncillingprgm?id={{i[0]}}">Delete</a></td>
+    </tr>
+    {% endfor %}
+    <tr align="center">
+      <td colspan="6">
+
+          <input type="submit" name="Submit" value="Add" />
+
+      </td>
+    </tr>
+  </table>
+  <label></label>
+</form>
+</body>
+<!--</html>-->
+{% endblock %}

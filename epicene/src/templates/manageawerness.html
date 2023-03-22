@@ -1,0 +1,35 @@
+{% extends 'localindex.html' %}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="addawernessprgm#about">
+  <table width="200"border="0" class="table">
+    <tr>
+      <td>Program Name </td>
+      <td>Venue</td>
+      <td>Date</td>
+      <td>Time</td>
+      <td>&nbsp;</td>
+    </tr>
+    {% for i in val %}
+    <tr>
+      <td>{{i[2]}}</td>
+      <td>{{i[6]}}</td>
+      <td>{{i[4]}}</td>
+      <td>{{i[5]}}</td>
+
+      <td><a href="deletemanageawerness?id={{i[0]}}">Delete</a></td>
+    </tr>
+    {% endfor %}
+    <tr align="CENTER">
+      <td colspan="6">
+
+          <input type="submit" name="Submit" value="Add" />
+
+        </label>
+      </a></td>
+    </tr>
+  </table>
+</form>
+</body>
+{%endblock%}

@@ -1,0 +1,31 @@
+{% extends 'legalassistantrindex.html' %}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="200" border="0" class="table">
+    {% if val %}
+    <tr>
+      <td>User</td>
+      <td>Date</td>
+      <td>Schedule</td>
+      <td>&nbsp;</td>
+    </tr>
+    {% for i in val%}
+    <tr>
+      <td>{{i[5]}}</td>
+      <td>{{i[2]}}</td>
+      <td>{{i[3]}}{{i[4]}}</td>
+      <td><p><a href="toacceptbooking?id={{i[6]}}">Accept</a></p>
+      <p><a href="rejectbooking?id={{i[6]}}">Reject</a></p></td>
+    </tr>
+    {% endfor %}
+
+    {% endif %}
+    <tr>
+      <td colspan="4"><br><div align="center"><a  class="btn btn-success" href="viewacceptbooking#about">View Approved Bookings</a></div> </td>
+    </tr>
+  </table>
+</form>
+</body>
+{%endblock%}

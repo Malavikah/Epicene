@@ -1,0 +1,48 @@
+
+{% extends 'legalassistantrindex.html' %}
+{% block body %}
+
+
+<body>
+<form id="form1" name="form1" method="post" enctype="multipart/form-data" action="upload">
+  <table width="200" border="0" class="table">
+    <tr>
+      <td>Job Type </td>
+      <td><label>
+        <select name="textfield" required>
+
+  <option >JANVARY</option>
+                    <option>FERBRUVARY</option>
+                    <option>MARCH</option>
+                    <option>APRIL</option>
+                    <option>MAY</option>
+                    <option>JUNE</option>
+                    <option>JULY</option>
+                    <option>AUGEST</option>
+                    <option>SEPTMBER</option>
+                    <option >OCTOBER</option>
+                    <option>NOVEMBER</option>
+                    <option>DECEMBER</option>
+
+        </select>
+      </label></td>
+    </tr>
+    <tr>
+      <td>Report</td>
+      <td><label>
+        <input type="file" name="file"  required/>
+      </label></td>
+    </tr>
+
+
+    <tr>
+      <td colspan="2"><label>
+        <div align="center">
+          <input type="submit" name="Submit" value="Add" />
+          </div>
+      </label></td>
+    </tr>
+  </table>
+</form>
+</body>
+{%endblock%}

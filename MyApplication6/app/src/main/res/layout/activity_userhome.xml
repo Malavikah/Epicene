@@ -1,0 +1,246 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagess">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="vertical">
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="350dp"
+
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#9C5F9B"
+                android:text="View Educational Support" />
+
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#9C5F9B"
+                android:text="View Jobs" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+
+
+                android:id="@+id/button7"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#9C5F9B"
+                android:text="View Health Tips" />
+
+        </TableRow>
+
+
+
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+
+
+                android:id="@+id/button8"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#9C5F9B"
+                android:text="View Counselling Programs" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+
+
+                android:id="@+id/button1"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#9C5F9B"
+                android:text=" chat" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+
+
+                android:id="@+id/button9"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#9C5F9B"
+                android:text="View Legal Assistant schedule and book" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow14"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+
+
+                android:id="@+id/button14"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#9C5F9B"
+                android:text="View Human Rights" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow12"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+
+
+                android:id="@+id/button12"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#9C5F9B"
+                android:text="Request Appointment" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+
+
+                android:id="@+id/button4"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#9C5F9B"
+                android:text="View Events" />
+
+        </TableRow>
+
+
+
+
+
+
+        <TableRow
+            android:id="@+id/tableRow13"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#9C5F9B"
+                android:text="View Appointments" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id="@+id/button_awareness"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#9C5F9B"
+                android:text="Awareness Programs" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id="@+id/button_medical"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#9C5F9B"
+                android:text="Medical Officers" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id="@+id/button_meetings"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#9C5F9B"
+                android:text="Meetings" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow15"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+
+
+                android:id="@+id/button15"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#9C5F9B"
+                android:text="Logout" />
+
+
+        </TableRow>
+
+
+    </LinearLayout>
+</ScrollView>

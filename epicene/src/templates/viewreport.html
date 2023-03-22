@@ -1,0 +1,39 @@
+{% extends 'adminindex.html' %}
+{% block body %}
+
+<body><form id="form1" name="form1" method="post" action="report1#about">
+  <table width="200" border="0" class="table">
+    <tr><td colspan="2">
+      <select name="m">
+       <option value="1" {% if mo=='1' %} selected {% endif %}>January</option>
+       <option value="2"  {% if mo=='2' %} selected {% endif %}>February</option>
+       <option value="3"  {% if mo=='3' %} selected {% endif %}>March</option>
+       <option value="4"  {% if mo=='4' %} selected {% endif %}>April</option>
+       <option value="5"  {% if mo=='5' %} selected {% endif %}>May</option>
+       <option value="6"  {% if mo=='6' %} selected {% endif %}>June</option>
+       <option value="7"  {% if mo=='7' %} selected {% endif %}>July</option>
+       <option value="8"  {% if mo=='8' %} selected {% endif %}>August</option>
+       <option value="9"  {% if mo=='9' %} selected {% endif %}>September</option>
+       <option value="10"  {% if mo=='10' %} selected {% endif %}>October</option>
+       <option value="11"  {% if mo=='11' %} selected {% endif %}>November</option>
+       <option value="12"  {% if mo=='12' %} selected {% endif %}>December</option>
+
+
+      </select>&nbsp;&nbsp;&nbsp;<input type="submit" value="Search">
+    </td></tr>
+    <tr>
+      <td>Legal Assistant</td>
+      <td>No.Of Bookings</td>
+    </tr>
+    {% for i in val %}
+    <tr>
+      <td>{{i[7]}}</td>
+      <td>{{i[15]}}</td>
+
+    </tr>
+    {% endfor %}
+
+  </table>
+</form>
+</body>
+{%endblock%}

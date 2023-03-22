@@ -1,0 +1,31 @@
+{% extends 'legalassistantrindex.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="toaddhumanrights">
+  <table width="200"border="0" class="table">
+    <tr>
+      <td>Type of Human Rights </td>
+      <td><label>
+        <select name="select" required>
+          <option>economic</option>
+          <option>social</option>
+          <option>civil</option>
+           <option>political</option>
+        </select>
+      </label></td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><label>
+      <textarea name="textarea" required></textarea>
+      </label></td>
+    </tr>
+    <tr align="CENTER">
+      <td colspan="2">
+          <input type="submit" name="Submit" value="Add" />
+          </td>
+    </tr>
+  </table>
+</form>
+</body>
+{%endblock%}

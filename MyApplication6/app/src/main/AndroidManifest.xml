@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.PREVENT_POWER_KEY" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/download"
+        android:requestLegacyExternalStorage="true"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@drawable/download"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name=".userregistration"/>
+        <activity android:name=".chatwithfriends"/>
+        <activity android:name=".editevent"/>
+        <activity android:name=".Test"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Addfriends"/>
+
+        <receiver android:name="com.example.myapplication.MyReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.example.myapplication.LockService" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".userhome"
+            android:exported="false" />
+        <activity
+            android:name=".Viewjob1"
+            android:exported="false" />
+        <activity
+            android:name=".viewhumanr"
+            android:exported="false" />
+        <activity
+            android:name=".Viewlegal1"
+            android:exported="false" />
+        <activity
+            android:name=".userchangepassword"
+            android:exported="false" />
+        <activity
+            android:name=".Viewdoc1"
+            android:exported="false" />
+        <activity
+            android:name=".reqapment"
+            android:exported="false" />
+        <activity
+            android:name=".viewjobb"
+            android:exported="false" />
+        <activity
+            android:name=".viewcounc1"
+            android:exported="false" />
+        <activity
+            android:name=".Viewjob"
+            android:exported="false" />
+        <activity
+            android:name=".viewhealthtip"
+            android:exported="false" />
+        <activity
+            android:name=".Addevent"
+            android:exported="false" />
+        <activity
+            android:name=".viewapmnt"
+            android:exported="false" />
+        <activity
+            android:name=".Requestapmt"
+            android:exported="false" />
+        <activity
+            android:name=".viewcounce"
+            android:exported="false" />
+        <activity
+            android:name=".Viewlegal"
+            android:exported="false" />
+        <activity
+            android:name=".Viewmeet"
+            android:exported="false" />
+        <activity
+            android:name=".Viewdoc"
+            android:exported="false" />
+
+
+
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+<activity android:name=".Changepwd"/>
+        <activity android:name=".Manageevent"/>
+<activity android:name=".Viewhealth"/>
+        <activity android:name=".Viewcoun"/>
+        <activity android:name=".Viewcoun1"/>
+<activity android:name=".Vieweduc"/>
+        <activity android:name=".Vieweduc1"/>
+        <activity android:name=".Viewapmt"/>
+        <activity android:name=".Viewhuman"/>
+        <activity android:name=".Viewawareness"/>
+        <activity android:name=".Viewmedical"/>
+        <activity android:name=".Viewmeeting"/>
+
+        <service android:name=".LocationService"/>
+        <receiver android:name=".Emergency"/>
+
+    </application>
+
+</manifest>

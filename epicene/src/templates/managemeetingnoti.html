@@ -1,0 +1,31 @@
+
+{% extends 'legalassistantrindex.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="addmeetingnotification#about">
+  <table width="200" border="0" class="table">
+    <tr>
+      <td>Meeting Time </td>
+      <td>Place</td>
+      <td>&nbsp;</td>
+    </tr>
+    {% for i in val %}
+    <tr>
+      <td>{{i[2]}}</td>
+      <td>{{i[3]}}</td>
+
+      <td><a href="deletemanagemeetingnoti?id={{i[0]}}">Delete</a></td>
+    </tr>
+    {% endfor %}
+    <tr align="CENTER">
+      <td colspan="4">
+
+         <input type="submit" name="Submit" value="Add" />
+
+      </td>
+    </tr>
+  </table>
+  <label></label>
+</form>
+</body>
+{%endblock%}

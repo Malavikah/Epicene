@@ -1,0 +1,45 @@
+{% extends 'localindex.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="toaddawernessprgm">
+  <table width="200" border="0" class="table">
+    <tr>
+      <td> Program Name </td>
+      <td><label>
+        <input type="text" name="textfield" required />
+      </label></td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><label>
+        <textarea name="textfield2" required ></textarea>
+      </label></td>
+    </tr>
+    <tr>
+      <td>Date</td>
+      <td><label>
+        <input type="date" name="textfield5" required min="{{ t }}"/>
+      </label></td>
+    </tr>
+    <tr>
+      <td> Time </td>
+      <td><label>
+        <input type="time" name="textfield3" required />
+      </label></td>
+    </tr>
+    <tr>
+      <td>Venue</td>
+      <td><label>
+        <input type="text" name="textfield4" required />
+      </label></td>
+    </tr>
+    <tr align="CENTER">
+      <td colspan="2">
+
+          <input type="submit" name="Submit" value="Add" />
+          </td>
+    </tr>
+  </table>
+</form>
+</body>
+{%endblock%}
